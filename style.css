@@ -5,10 +5,15 @@ html, body {
 	margin: 0;
 	overflow: hidden;
 	padding: 0;
-	box-sizing: border-box;
+	
 	font-family: 'Cinzel Decorative', cursive;
 }
-
+body {
+	background-image: url("https://vignette.wikia.nocookie.net/gameofthrones/images/7/7e/The_known_world_HBO.jpg/revision/latest/scale-to-width-down/2000?cb=20130507121142");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 
 
 .menu-btn {
@@ -81,10 +86,28 @@ html, body {
 	transition: all 0.5s ease-out;
 }
 
+#fourth {
+	position: absolute;
+	top: 160px;
+	left: 160px;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	background: #f0863a;
+	color: #632828;
+	opacity: 0;
+	transition: all 0.5s ease-out;
+}
+
 h2 {
 	margin-top: 5px;
 	margin-left: 60px;
 	font-size: 1.7em;
+	cursor: pointer;
+}
+
+h2:hover {
+	text-decoration: underline;
 }
 
 img {
@@ -92,6 +115,20 @@ img {
 	margin: auto;
 	margin-top: 20%;
 
+}
+
+.glow:hover {
+	border: 2px solid black;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	body {
+		background-size: 100% 100%;
+	}
+
+	img {
+		width: 40%;
+	}
 }
 
 
