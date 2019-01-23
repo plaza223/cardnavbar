@@ -8,6 +8,15 @@ html, body {
 	font-family: 'Cinzel Decorative', cursive;
 }
 
+.container {
+	width: 100%;
+	min-height: 100%;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 
 .menu-btn {
   position: absolute;
