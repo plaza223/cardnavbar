@@ -3,7 +3,7 @@ const first = document.querySelector("#first");
 const second = document.querySelector("#second");
 const third = document.querySelector("#third");
 
-document.body.addEventListener('touchstart', function(e){ e.preventDefault(); });
+document.addEventListener('touchmove', function() { e.preventDefault(); }, { passive:false });
 
 let showMenu = false;
 
