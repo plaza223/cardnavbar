@@ -6,6 +6,7 @@ const fourth = document.querySelector("#fourth");
 const card = document.querySelectorAll(".card");
 
 
+
 let showMenu = false;
 
 
@@ -25,10 +26,23 @@ function openMenu() {
 	second.style.top = "80px";
 	third.style.top = "120px";
 	fourth.style.top = "160px";
-	first.style.left = "40px";
+	
+	function myFunction(x) {
+  if (x.matches) { // If media query matches
+    first.style.left = "0";
+	second.style.left = "0";
+	third.style.left = "0";
+	fourth.style.left = "0";
+  } else {
+   first.style.left = "40px";
 	second.style.left = "80px";
 	third.style.left = "120px";
 	fourth.style.left = "160px";
+  }
+}
+var x = window.matchMedia("(max-width: 480px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
 	first.style.zIndex = 2;
 	second.style.zIndex = 2;
 	third.style.zIndex = 2;

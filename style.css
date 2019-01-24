@@ -129,6 +129,22 @@ img {
 	img {
 		width: 40%;
 	}
+
+	#first {
+		left: 0;
+	}
+
+	#second {
+		left: 0;
+	}
+
+	#third {
+		left: 0;
+	}
+
+	#fourth {
+		left: 0;
+	}
 }
 
 
